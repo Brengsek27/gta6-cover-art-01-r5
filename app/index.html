@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neon Coast Studio</title>
+  <meta name="description" content="A local-first cover-art editor for vivid multi-panel stories.">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./src/main.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="brand"><span class="mark" aria-hidden="true">NC</span><h1>NEON COAST STUDIO</h1></div>
+    <p class="motto">ORDINARY PHOTOS. EXTRAORDINARY STORIES.</p>
+    <span class="local">LOCAL &amp; PRIVATE <b>V.03</b></span>
+  </header>
+  <main class="editor">
+    <aside class="rail" aria-label="Cover controls">
+      <section>
+        <h2><span>01</span> YOUR SCENES</h2>
+        <label class="drop" id="drop">
+          <input type="file" id="files" accept="image/jpeg,image/png,image/webp" multiple aria-label="Load photos">
+          <strong>Drop photos here</strong>
+          <small>JPG, PNG or WebP · stays local</small>
+        </label>
+        <div class="choices samples" aria-label="Samples" role="group">
+          <button data-sample="boulevard">Boulevard</button><button data-sample="pier">Pier</button>
+          <button data-sample="street">Street</button><button data-sample="marina">Marina</button>
+        </div>
+        <div id="thumbnails" class="thumbnails"></div>
+        <p id="status" role="status" hidden></p>
+      </section>
+      <section>
+        <h2><span>02</span> SET THE SCENE</h2>
+        <div class="choices layouts" aria-label="Layout" role="group">
+          <button data-layout="collage">Collage</button><button data-layout="stack">Stack</button>
+          <button data-layout="hero">Hero</button><button data-layout="duo">Duo</button><button data-layout="tilt">Tilt</button>
+        </div>
+        <h3>COLOR STORY</h3>
+        <div class="choices colors" aria-label="Color story" role="group">
+          <button data-grade="sunset">Sunset</button><button data-grade="neon">Neon</button>
+          <button data-grade="golden">Golden</button><button data-grade="vivid">Vivid</button>
+        </div>
+      </section>
+      <section>
+        <h2><span>03</span> WRITE YOUR STORY</h2>
+        <label class="field">COVER TITLE<input id="caption" value="NEON COAST" maxlength="40"></label>
+        <label class="field">SCRIPT SUBTITLE<input id="sub" value="vice heat rising" maxlength="32"></label>
+        <label class="field">STICKER<input id="sticker" value="MAXIMUM HEAT" maxlength="24"></label>
+        <div class="checks">
+          <label><input type="checkbox" id="ink"> Ink effect</label>
+          <label><input type="checkbox" id="stars" checked> Stars</label>
+          <label><input type="checkbox" id="grain" checked> Grain</label>
+        </div>
+      </section>
+      <section>
+        <h2><span>04</span> FINE-TUNE</h2>
+        <label class="field zoom"><span>PHOTO ZOOM <output id="zoom-value" for="zoom">100%</output></span>
+          <input id="zoom" type="range" min="80" max="130" value="100">
+        </label>
+        <label class="field">CANVAS FORMAT
+          <select id="format">
+            <option value="1920x1080">Landscape · 1920 × 1080</option>
+            <option value="1080x1350">Portrait · 1080 × 1350</option>
+            <option value="1080x1080" selected>Square · 1080 × 1080</option>
+          </select>
+        </label>
+        <button id="export" class="export" disabled><span aria-hidden="true">↓</span> Export cover</button>
+      </section>
+    </aside>
+    <section class="preview" aria-label="Cover preview">
+      <header class="preview-bar"><strong id="dimensions">1080 × 1080</strong><span>PRINT-READY PNG</span></header>
+      <div class="stage"><canvas id="cover" width="1080" height="1080" aria-label="Your rendered cover"></canvas></div>
+    </section>
+  </main>
+</body>
+</html>

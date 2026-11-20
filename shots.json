@@ -1,0 +1,6 @@
+[
+  { "name": "1-cover.jpg", "query": "?shot=cover&layout=collage&grade=sunset&ink=1&photo=boulevard&photo2=pier&photo3=marina&photo4=street&caption=NEON%20COAST&sub=vice%20heat%20rising&size=1280x720", "w": 1280, "h": 720 },
+  { "name": "2-editor.jpg", "query": "?shot=editor&layout=stack&caption=PIER%20PRESSURE", "w": 1280, "h": 720 },
+  { "name": "3-cover.jpg", "query": "?shot=cover&layout=stack&grade=sunset&photo=boulevard&photo2=pier&photo3=marina&photo4=street&caption=PIER%20PRESSURE&sub=one%20last%20ride&size=1024x1280", "w": 1024, "h": 1280 },
+  { "name": "4-cover.jpg", "query": "?shot=cover&layout=tilt&grade=golden&photo=boulevard&photo2=pier&photo3=marina&photo4=street&caption=BOULEVARD%20QUEEN&sub=golden%20hour&size=1080x1080", "w": 1080, "h": 1080 }
+]

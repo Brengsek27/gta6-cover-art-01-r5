@@ -1,6 +1,6 @@
 # Neon Coast Studio
 
-[![make.fun competition](https://make.fun/badges/gta6-cover-art-01.svg)](https://make.fun/competitions/gta6-cover-art-01) [![rank](https://make.fun/badges/gta6-cover-art-01/rank.svg)](https://make.fun/competitions/gta6-cover-art-01/leaderboard) [![reward](https://make.fun/badges/gta6-cover-art-01/reward.svg)](https://make.fun/competitions/gta6-cover-art-01)
+[![make.fun · gta6-cover-art-01](https://make.fun/badge/gta6-cover-art-01.svg)](https://make.fun/bounty/gta6-cover-art-01) [![rank](https://make.fun/badge/gta6-cover-art-01/Brengsek27/gta6-cover-art-01-r5/rank.svg)](https://make.fun/bounty/gta6-cover-art-01/leaderboard) [![reward](https://make.fun/badge/gta6-cover-art-01/Brengsek27/gta6-cover-art-01-r5/reward.svg)](https://make.fun/bounty/gta6-cover-art-01)
 
 Competition entry: [Brengsek27/gta6-cover-art-01-r5](https://make.fun/competitions/gta6-cover-art-01/leaderboard).
 
